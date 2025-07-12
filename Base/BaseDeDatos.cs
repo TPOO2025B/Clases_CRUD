@@ -20,5 +20,11 @@ namespace BaseDatos.BaseDatos
         }
 
 
+        public static Cliente BuscarClientePorCedula(string parametro_cedula)
+        {
+            return BaseDatosCliente.FirstOrDefault(bdc => bdc.cedula == parametro_cedula);
+        }
+
+
     }
 }

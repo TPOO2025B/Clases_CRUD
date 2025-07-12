@@ -14,6 +14,8 @@ namespace BaseDatos
 
             while (true)
             {
+
+                //Hola estoy modificando
                 Console.Clear();
                 Console.Write("Ingrese la cédula del cliente: ");
                 string cedula = Console.ReadLine();

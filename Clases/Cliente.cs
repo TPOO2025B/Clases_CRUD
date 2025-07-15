@@ -16,6 +16,28 @@ namespace BaseDatos.Clases
         private string apellidos;
         private string nombres_completos;
 
+       
+
+        public void setNombres(string nombres)
+        {
+            this.nombres = nombres;
+            this.nombres_completos = nombres + " " + this.apellidos;
+        }
+        public void setApellidos(string apellidos)
+        {
+            this.apellidos = apellidos;
+            this.nombres_completos = this.nombres + " " + apellidos;
+        }
+
+        public string getNombresCompletos()
+        {
+            return this.nombres_completos;
+        }
+        public int getId()
+        {
+            return this.id;
+        }
+
         public Cliente(string cedula, string nombres, string apellidos)
         {
             int secuencialGenerado = BaseDeDatos.BaseDatosCliente.Count() + 1;
